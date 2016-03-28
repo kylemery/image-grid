@@ -1,0 +1,97 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+section img:nth-child(2) {
+  display: none;
+}
+
+section img:last-child {
+  display: none;
+}
+
+body {
+  margin: 0;
+}
+
+@media only screen and (min-width: 25em) {
+
+  section img:nth-child(2) {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+
+  section img:nth-child(3) {
+    float: left;
+    width: 50%;
+  }
+
+  section img:nth-child(4) {
+    float: left;
+    width: 50%;
+  }
+
+  section img:last-child {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  section img:last-child {
+    display: none;
+  }
+
+  section img:nth-child(2) {
+    width: 33.3333%;
+  }
+
+  section img:nth-child(3) {
+    width: 33.3333%;
+  }
+
+  section img:nth-child(4) {
+    width: 33.3333%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  section img:last-child {
+    display: block;
+    float: left;
+    width: 33.3333%;
+  }
+
+  section img:first-child {
+    width: 66.6666%;
+    float: left;
+  }
+
+
+
+}
